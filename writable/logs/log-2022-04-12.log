@@ -1,0 +1,235 @@
+ERROR - 2022-04-12 08:19:39 --> Unknown column 'c.montant' in 'field list'
+CRITICAL - 2022-04-12 08:19:39 --> Unknown column 'c.montant' in 'field list'
+#0 C:\Users\gueye\PhpstormProjects\tontine\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `c`.`mon...', 0)
+#1 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`mon...')
+#2 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`mon...')
+#3 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`mon...', Array, false)
+#4 C:\Users\gueye\PhpstormProjects\tontine\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\gueye\PhpstormProjects\tontine\app\Models\TontineModel.php(48): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\gueye\PhpstormProjects\tontine\app\Controllers\Adherent.php(23): App\Models\TontineModel->listeTontineAdherent('1')
+#7 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(825): App\Controllers\Adherent->index()
+#8 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#9 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\gueye\PhpstormProjects\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\gueye\PhpstormProjects\tontine\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\gueye\\...')
+#12 {main}
+ERROR - 2022-04-12 08:19:57 --> Unknown column 'montant' in 'field list'
+CRITICAL - 2022-04-12 08:19:57 --> Unknown column 'montant' in 'field list'
+#0 C:\Users\gueye\PhpstormProjects\tontine\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `montant...', 0)
+#1 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `montant...')
+#2 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `montant...')
+#3 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `montant...', Array, false)
+#4 C:\Users\gueye\PhpstormProjects\tontine\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\gueye\PhpstormProjects\tontine\app\Models\TontineModel.php(48): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\gueye\PhpstormProjects\tontine\app\Controllers\Adherent.php(23): App\Models\TontineModel->listeTontineAdherent('1')
+#7 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(825): App\Controllers\Adherent->index()
+#8 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#9 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\gueye\PhpstormProjects\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\gueye\PhpstormProjects\tontine\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\gueye\\...')
+#12 {main}
+ERROR - 2022-04-12 08:21:58 --> Column 'idAdherent' in where clause is ambiguous
+CRITICAL - 2022-04-12 08:21:58 --> Column 'idAdherent' in where clause is ambiguous
+#0 C:\Users\gueye\PhpstormProjects\tontine\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\gueye\PhpstormProjects\tontine\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\gueye\PhpstormProjects\tontine\app\Models\TontineModel.php(48): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\gueye\PhpstormProjects\tontine\app\Controllers\Adherent.php(23): App\Models\TontineModel->listeTontineAdherent('1')
+#7 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(825): App\Controllers\Adherent->index()
+#8 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#9 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\gueye\PhpstormProjects\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\gueye\PhpstormProjects\tontine\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\gueye\\...')
+#12 {main}
+ERROR - 2022-04-12 08:22:36 --> Column 'idAdherent' in where clause is ambiguous
+CRITICAL - 2022-04-12 08:22:36 --> Column 'idAdherent' in where clause is ambiguous
+#0 C:\Users\gueye\PhpstormProjects\tontine\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\gueye\PhpstormProjects\tontine\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\gueye\PhpstormProjects\tontine\app\Models\TontineModel.php(48): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\gueye\PhpstormProjects\tontine\app\Controllers\Adherent.php(23): App\Models\TontineModel->listeTontineAdherent('1')
+#7 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(825): App\Controllers\Adherent->index()
+#8 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#9 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\gueye\PhpstormProjects\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\gueye\PhpstormProjects\tontine\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\gueye\\...')
+#12 {main}
+ERROR - 2022-04-12 08:22:50 --> Column 'idAdherent' in where clause is ambiguous
+CRITICAL - 2022-04-12 08:22:50 --> Column 'idAdherent' in where clause is ambiguous
+#0 C:\Users\gueye\PhpstormProjects\tontine\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\gueye\PhpstormProjects\tontine\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\gueye\PhpstormProjects\tontine\app\Models\TontineModel.php(48): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\gueye\PhpstormProjects\tontine\app\Controllers\Adherent.php(23): App\Models\TontineModel->listeTontineAdherent('1')
+#7 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(825): App\Controllers\Adherent->index()
+#8 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#9 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\gueye\PhpstormProjects\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\gueye\PhpstormProjects\tontine\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\gueye\\...')
+#12 {main}
+ERROR - 2022-04-12 08:23:13 --> Unknown column 'tontine.idAdherent' in 'where clause'
+CRITICAL - 2022-04-12 08:23:13 --> Unknown column 'tontine.idAdherent' in 'where clause'
+#0 C:\Users\gueye\PhpstormProjects\tontine\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\gueye\PhpstormProjects\tontine\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\gueye\PhpstormProjects\tontine\app\Models\TontineModel.php(48): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\gueye\PhpstormProjects\tontine\app\Controllers\Adherent.php(23): App\Models\TontineModel->listeTontineAdherent('1')
+#7 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(825): App\Controllers\Adherent->index()
+#8 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#9 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\gueye\PhpstormProjects\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\gueye\PhpstormProjects\tontine\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\gueye\\...')
+#12 {main}
+ERROR - 2022-04-12 08:24:47 --> Unknown column 'idAdherent' in 'where clause'
+CRITICAL - 2022-04-12 08:24:47 --> Unknown column 'idAdherent' in 'where clause'
+#0 C:\Users\gueye\PhpstormProjects\tontine\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\gueye\PhpstormProjects\tontine\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\gueye\PhpstormProjects\tontine\app\Models\TontineModel.php(46): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\gueye\PhpstormProjects\tontine\app\Controllers\Adherent.php(23): App\Models\TontineModel->listeTontineAdherent('1')
+#7 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(825): App\Controllers\Adherent->index()
+#8 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#9 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\gueye\PhpstormProjects\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\gueye\PhpstormProjects\tontine\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\gueye\\...')
+#12 {main}
+ERROR - 2022-04-12 08:45:04 --> Unknown column 'c.$idAdherent' in 'where clause'
+CRITICAL - 2022-04-12 08:45:04 --> Unknown column 'c.$idAdherent' in 'where clause'
+#0 C:\Users\gueye\PhpstormProjects\tontine\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\gueye\PhpstormProjects\tontine\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\gueye\PhpstormProjects\tontine\app\Models\TontineModel.php(49): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\gueye\PhpstormProjects\tontine\app\Controllers\Adherent.php(23): App\Models\TontineModel->listeTontineAdherent('1')
+#7 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(825): App\Controllers\Adherent->index()
+#8 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#9 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\gueye\PhpstormProjects\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\gueye\PhpstormProjects\tontine\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\gueye\\...')
+#12 {main}
+ERROR - 2022-04-12 08:46:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND `c`.`idAdherent=?` `:p`.`idAdherent` = ? AND `c`.`idAdherent` = ?:' at line 5
+CRITICAL - 2022-04-12 08:46:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND `c`.`idAdherent=?` `:p`.`idAdherent` = ? AND `c`.`idAdherent` = ?:' at line 5
+#0 C:\Users\gueye\PhpstormProjects\tontine\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\gueye\PhpstormProjects\tontine\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\gueye\PhpstormProjects\tontine\app\Models\TontineModel.php(48): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\gueye\PhpstormProjects\tontine\app\Controllers\Adherent.php(23): App\Models\TontineModel->listeTontineAdherent('1')
+#7 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(825): App\Controllers\Adherent->index()
+#8 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#9 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\gueye\PhpstormProjects\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\gueye\PhpstormProjects\tontine\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\gueye\\...')
+#12 {main}
+CRITICAL - 2022-04-12 09:06:12 --> Undefined variable $titre
+#0 C:\Users\gueye\PhpstormProjects\tontine\app\Views\layout\entete.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\gueye\\...', 9)
+#1 C:\Users\gueye\PhpstormProjects\tontine\system\View\View.php(210): include('C:\\Users\\gueye\\...')
+#2 C:\Users\gueye\PhpstormProjects\tontine\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\gueye\PhpstormProjects\tontine\system\Common.php(1089): CodeIgniter\View\View->render('layout/entete', Array, true)
+#4 C:\Users\gueye\PhpstormProjects\tontine\app\Controllers\Administrateur.php(13): view('layout/entete')
+#5 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(825): App\Controllers\Administrateur->index()
+#6 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administrateur))
+#7 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\gueye\PhpstormProjects\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\gueye\PhpstormProjects\tontine\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\gueye\\...')
+#10 {main}
+CRITICAL - 2022-04-12 10:49:45 --> Undefined variable $nbTontine
+#0 C:\Users\gueye\PhpstormProjects\tontine\app\Views\utilisateur\gestion.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\gueye\\...', 5)
+#1 C:\Users\gueye\PhpstormProjects\tontine\system\View\View.php(210): include('C:\\Users\\gueye\\...')
+#2 C:\Users\gueye\PhpstormProjects\tontine\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\gueye\PhpstormProjects\tontine\system\Common.php(1089): CodeIgniter\View\View->render('utilisateur/ges...', Array, true)
+#4 C:\Users\gueye\PhpstormProjects\tontine\app\Controllers\Utilisateur.php(150): view('utilisateur/ges...')
+#5 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(825): App\Controllers\Utilisateur->gestion()
+#6 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#7 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\gueye\PhpstormProjects\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\gueye\PhpstormProjects\tontine\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\gueye\\...')
+#10 {main}
+CRITICAL - 2022-04-12 12:24:35 --> Undefined variable $successAjModifPasse
+#0 C:\Users\gueye\PhpstormProjects\tontine\app\Views\utilisateur\profil.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\gueye\\...', 5)
+#1 C:\Users\gueye\PhpstormProjects\tontine\system\View\View.php(210): include('C:\\Users\\gueye\\...')
+#2 C:\Users\gueye\PhpstormProjects\tontine\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\gueye\PhpstormProjects\tontine\system\Common.php(1089): CodeIgniter\View\View->render('utilisateur/pro...', Array, true)
+#4 C:\Users\gueye\PhpstormProjects\tontine\app\Controllers\Utilisateur.php(214): view('utilisateur/pro...')
+#5 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(825): App\Controllers\Utilisateur->profil()
+#6 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#7 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\gueye\PhpstormProjects\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\gueye\PhpstormProjects\tontine\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\gueye\\...')
+#10 {main}
+CRITICAL - 2022-04-12 12:25:09 --> Undefined variable $successAjModifPasse
+#0 C:\Users\gueye\PhpstormProjects\tontine\app\Views\utilisateur\profil.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\gueye\\...', 5)
+#1 C:\Users\gueye\PhpstormProjects\tontine\system\View\View.php(210): include('C:\\Users\\gueye\\...')
+#2 C:\Users\gueye\PhpstormProjects\tontine\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\gueye\PhpstormProjects\tontine\system\Common.php(1089): CodeIgniter\View\View->render('utilisateur/pro...', Array, true)
+#4 C:\Users\gueye\PhpstormProjects\tontine\app\Controllers\Utilisateur.php(214): view('utilisateur/pro...')
+#5 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(825): App\Controllers\Utilisateur->profil()
+#6 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#7 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\gueye\PhpstormProjects\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\gueye\PhpstormProjects\tontine\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\gueye\\...')
+#10 {main}
+CRITICAL - 2022-04-12 15:17:39 --> Call to undefined function App\Models\dump()
+#0 C:\Users\gueye\PhpstormProjects\tontine\app\Controllers\Adherent.php(23): App\Models\TontineModel->listeTontineAdherent('2')
+#1 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(825): App\Controllers\Adherent->index()
+#2 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#3 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\gueye\PhpstormProjects\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\gueye\PhpstormProjects\tontine\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\gueye\\...')
+#6 {main}
+ERROR - 2022-04-12 15:35:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OUTER JOIN `cotise` `c` ON `c`.`idAdherent`=`p`.`idAdherent`
+WHERE `p`.`idAdhere' at line 4
+CRITICAL - 2022-04-12 15:35:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OUTER JOIN `cotise` `c` ON `c`.`idAdherent`=`p`.`idAdherent`
+WHERE `p`.`idAdhere' at line 4
+#0 C:\Users\gueye\PhpstormProjects\tontine\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `libelle...', 0)
+#1 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `libelle...')
+#2 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `libelle...')
+#3 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `libelle...', Array, false)
+#4 C:\Users\gueye\PhpstormProjects\tontine\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\gueye\PhpstormProjects\tontine\app\Models\TontineModel.php(51): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\gueye\PhpstormProjects\tontine\app\Controllers\Adherent.php(23): App\Models\TontineModel->listeTontineAdherent('2')
+#7 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(825): App\Controllers\Adherent->index()
+#8 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#9 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\gueye\PhpstormProjects\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\gueye\PhpstormProjects\tontine\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\gueye\\...')
+#12 {main}
+ERROR - 2022-04-12 15:45:49 --> Column 'id' in group statement is ambiguous
+CRITICAL - 2022-04-12 15:45:49 --> Column 'id' in group statement is ambiguous
+#0 C:\Users\gueye\PhpstormProjects\tontine\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `libelle...', 0)
+#1 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `libelle...')
+#2 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `libelle...')
+#3 C:\Users\gueye\PhpstormProjects\tontine\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `libelle...', Array, false)
+#4 C:\Users\gueye\PhpstormProjects\tontine\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\gueye\PhpstormProjects\tontine\app\Models\TontineModel.php(51): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\gueye\PhpstormProjects\tontine\app\Controllers\Adherent.php(23): App\Models\TontineModel->listeTontineAdherent('1')
+#7 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(825): App\Controllers\Adherent->index()
+#8 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#9 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\gueye\PhpstormProjects\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\gueye\PhpstormProjects\tontine\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\gueye\\...')
+#12 {main}
+CRITICAL - 2022-04-12 15:58:29 --> Undefined array key "montant"
+#0 C:\Users\gueye\PhpstormProjects\tontine\app\Views\adherent\index.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\gueye\\...', 56)
+#1 C:\Users\gueye\PhpstormProjects\tontine\system\View\View.php(210): include('C:\\Users\\gueye\\...')
+#2 C:\Users\gueye\PhpstormProjects\tontine\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\gueye\PhpstormProjects\tontine\system\Common.php(1089): CodeIgniter\View\View->render('adherent/index', Array, true)
+#4 C:\Users\gueye\PhpstormProjects\tontine\app\Controllers\Adherent.php(27): view('adherent/index')
+#5 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(825): App\Controllers\Adherent->index()
+#6 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#7 C:\Users\gueye\PhpstormProjects\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\gueye\PhpstormProjects\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\gueye\PhpstormProjects\tontine\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\gueye\\...')
+#10 {main}
