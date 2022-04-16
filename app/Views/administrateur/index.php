@@ -26,3 +26,29 @@
         </table>
     </div>
 </div>
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Courbe</h6>
+    </div>
+    <div class="card-body">
+        <div class="chart-area">
+            <canvas id="myAreaChart"></canvas>
+        </div>
+        <hr>
+        <span class="bottom-chart">Nombre de participants des tontines</span>
+    </div>
+</div>
+
+<?= script_tag('js/sb-admin-2.min.js') ?>
+<?= script_tag('vendor/chart.js/Chart.js') ?>
+<?= script_tag('vendor/chart.js/plugins/chartjs-plugin-datalabels.js') ?>
+<?= script_tag('js/chart-area.js') ?>
+
+<script>
+    let
+        labels = "<?= implode(",", array_column($listeParticipant, 'libelle')) ?>".split(','),
+        data = "<?= implode(",", array_column($listeParticipant, 'nbp')) ?>".split(',')
+    ;
+
+    startAreaChart(labels, data);
+</script>
